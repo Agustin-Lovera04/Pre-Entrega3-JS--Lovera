@@ -90,7 +90,7 @@ function bienvenida(inputNombre, bUser, btnLogin) {
   } else {
       btnLogin.addEventListener("click", () => { 
           if (inputNombre.value !== "") { 
-              Ot(inputNombre, bUser, btnLogin); 
+              Ot(inputNombre, bUser, btnLogin)
               btnLogin.classList.add("oculto")
           }
       })
@@ -292,9 +292,9 @@ function lanzarAlertCompra(total) {
         '¡Compra realizada!',
         'Tu compra ha sido procesada.',
         'success'
-      );
+      )
     }
-  });
+  })
 }
 
 
@@ -304,5 +304,5 @@ function lanzarTostada(){
     text: "AGREGADO AL CARRITO",
     className: "info",
     duration:1500
-  }).showToast();
+  }).showToast()
 }

@@ -116,7 +116,7 @@ function creadorCard(array, contenedor, contenidoCarrito) {
       x.innerHTML = `
           <div class="bg">
               <h3 class="titleCard">${nombre}</h3>
-              <img class="imgCard" src="img/${srcImg}">
+              <img class="imgCard" src="./img/${srcImg}">
               <div class="c2">
                   <h3 class="precioCard">$-${precio}</h3>
                   <button id=${id}>Agregar al carrito</button>

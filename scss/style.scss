@@ -1,12 +1,15 @@
-@mixin flex-center{
+@mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-*{margin: 0; padding: 0;}
+* {
+  margin: 0;
+  padding: 0;
+}
 
-body{
+body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
@@ -14,7 +17,7 @@ body{
 
 
 //HEADER
-#header{
+#header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,35 +30,50 @@ body{
   z-index: 9999;
 }
 
-.logoYBtnCarrito{display: flex; flex-direction: row; justify-content: space-between;width: 100%; align-items: center;}
+.logoYBtnCarrito {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
 
-.logoyTit{@include flex-center(); flex-direction: row;}
+.logoyTit {
+  @include flex-center();
+  flex-direction: row;
+}
 
 
-.logo{
+.logo {
   height: 60px;
   width: 60px;
   margin: 4px;
   padding: 4px;
 }
 
-.bienvenida{gap: 10px;width: 100%; @include flex-center(); flex-direction: row; background-color:rgba($color: #e52b50, $alpha: .6)}
+.bienvenida {
+  gap: 10px;
+  width: 100%;
+  @include flex-center();
+  flex-direction: row;
+  background-color: rgba($color: #e52b50, $alpha: .6)
+}
 
 //MAIN
 .grid__main {
-  display: grid; 
-  grid-template-columns: 15% 85%; 
-  grid-template-rows: min-content min-content min-content; 
-  gap: 0px 0px; 
-  grid-template-areas: 
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: min-content min-content min-content;
+  gap: 0px 0px;
+  grid-template-areas:
     "filtros cardsYTit"
-    "filtros cardsYTit"; 
+    "filtros cardsYTit";
 }
 
 .filtros {
-  
+
   grid-area: filtros;
-  position: fixed; 
+  position: fixed;
   top: 0;
   height: 100vh;
   width: 15%;
@@ -65,76 +83,137 @@ body{
   background-color: lightgrey;
   margin-top: 116px;
   padding-top: 20px;
-  }
+}
 
 
-.cardsYTit { grid-area: cardsYTit;   margin-top: 123px;
-  padding-top: 20px; height: 100%;}
-
-.contenedorm1Ym2{
+.cardsYTit {
+  grid-area: cardsYTit;
+  margin-top: 123px;
+  padding-top: 20px;
   height: 100%;
 }
-  
 
-.titulo{color: white;}
-
-.fn{font-size: 28px}
-
-  
-  .nUser{height: 100px; width: 100px;}
+.contenedorm1Ym2 {
+  height: 100%;
+}
 
 
-  #bUser{font-size: 35px;}
-  
-  
-  .subT{ color: black;margin: 8px;padding: 8px;}
-  
-  
-  #filtroInp{height: 30px; width: 80%; margin: 5%;}
-  
-  .m2{display: flex; flex-direction: column; justify-content: space-around; align-items: center; margin-top: 20px;padding-top: 10px; gap: 10px }
-  
-  .filtroCat{ height: 35px; width: 80%; font-size: auto;
-    transition-duration: 0.4s;  background-color: #e52b50; border-radius: 10%;}
-  
-  .filtroCat:hover{ background-color: white;color: black;  padding: 7px;}
-  
-  .dest{font-size: 35px; text-align: center;}
-  
+.titulo {
+  color: white;
+}
 
-  //CARRITO
-  #carrito{
-        background-image: url('../img/shopping-cart.png');
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: contain;
-        width: 60px; 
-        height: 60px;
-        border-radius: 35px;
-        margin-right: 2%;
-  }
-  
-  #contenedorCarrito {
-    width: 80%;
+.fn {
+  font-size: 28px
+}
+
+
+.nUser {
+  height: 100px;
+  width: 100px;
+}
+
+
+#bUser {
+  font-size: 35px;
+}
+
+
+.subT {
+  color: black;
+  margin: 8px;
+  padding: 8px;
+}
+
+
+#filtroInp {
+  height: 30px;
+  width: 80%;
+  margin: 5%;
+}
+
+.m2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  gap: 10px
+}
+
+.filtroCat {
+  height: 35px;
+  width: 80%;
+  font-size: auto;
+  transition-duration: 0.4s;
+  background-color: #e52b50;
+  border-radius: 10%;
+}
+
+.filtroCat:hover {
+  background-color: white;
+  color: black;
+  padding: 7px;
+}
+
+.dest {
+  font-size: 35px;
+  text-align: center;
+}
+
+
+//CARRITO
+#carrito {
+  background-image: url('../img/shopping-cart.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 60px;
+  height: 60px;
+  border-radius: 35px;
+  margin-right: 2%;
+}
+
+#contenedorCarrito {
+  width: 80%;
   height: 60%;
   overflow-y: scroll;
-  margin-top: 10px; padding-top: 10px; background-color: lightgrey;
+  margin-top: 10px;
+  padding-top: 10px;
+  background-color: lightgrey;
 }
 
-#padreCarrito{
-  display: flex; flex-direction: column; justify-content: space-around; align-items: center; margin-top: 5px; background-color: lightgrey;
+#padreCarrito {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5px;
+  background-color: lightgrey;
 }
 
 
-#esteticaArticulosCarrito{display: flex; flex-direction: row; justify-content: space-between;}
+#esteticaArticulosCarrito {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-#cajaTotal, .precioySubtot{display: flex; flex-direction: row; justify-content: right; align-items: center;}
+#cajaTotal,
+.precioySubtot {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
 //CARDS
 #articulos {
   display: flex;
-justify-content: center;
-flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
 .card {
   position: relative;
   width: 265px;
@@ -146,7 +225,7 @@ flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 4px 4px 15px #bebebe, -4px -4px 15px #ffffff; 
+  box-shadow: 4px 4px 15px #bebebe, -4px -4px 15px #ffffff;
   margin: 10px;
   padding: 10px;
 }
@@ -205,7 +284,7 @@ flex-wrap: wrap;
   75% {
     transform: translate(-100%, -100%) translate3d(0, 100%, 0);
   }
-  
+
   100% {
     transform: translate(-100%, -100%) translate3d(0, 0, 0);
   }
@@ -215,7 +294,7 @@ flex-wrap: wrap;
   0% {
     outline-color: white;
   }
-  
+
   50% {
     outline-color: red;
   }
@@ -243,12 +322,15 @@ flex-wrap: wrap;
 }
 
 .imgCard {
-  height: 180px; 
-  width: 180px; 
+  height: 180px;
+  width: 180px;
   object-fit: cover;
   border-radius: 10px;
 }
-.precioCard{color: green;}
+
+.precioCard {
+  color: green;
+}
 
 .c2 {
   display: flex;
@@ -273,11 +355,14 @@ flex-wrap: wrap;
 }
 
 
-.oculto{display: none; position: absolute}
+.oculto {
+  display: none;
+  position: absolute
+}
 
 
 //TABLA CARRITO
-#contenidoCarrito{
+#contenidoCarrito {
   display: flex;
   flex-direction: column;
 }
@@ -292,7 +377,7 @@ tbody td {
   font-size: 16px;
 }
 
-#tr{
+#tr {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -312,13 +397,16 @@ tbody td {
   padding: 10px;
 }
 
-.precioySubtot{
- gap: 80px; display: flex; 
+.precioySubtot {
+  gap: 80px;
+  display: flex;
 }
 
-.tdPrecios{
- gap: 35px; display: flex; 
+.tdPrecios {
+  gap: 35px;
+  display: flex;
 }
+
 .restar,
 .sumar {
   font-size: 10px;
@@ -336,12 +424,23 @@ tbody td {
   background-color: green;
 }
 
-#botonesCarrito{display: flex; flex-direction: row;}
-#comprar, #inicio{
-  margin: 10px; width: 180px; height: 40px; background-color: lightgreen; font-size: auto;
+#botonesCarrito {
+  display: flex;
+  flex-direction: row;
 }
+
+#comprar,
+#inicio {
+  margin: 10px;
+  width: 180px;
+  height: 40px;
+  background-color: lightgreen;
+  font-size: auto;
+}
+
 //FOOTER
 
-.footer{
- background-color: rgba($color: red, $alpha: .3); text-align: center;
-  }
+.footer {
+  background-color: rgba($color: red, $alpha: .3);
+  text-align: center;
+}

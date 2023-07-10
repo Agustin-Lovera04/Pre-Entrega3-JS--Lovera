@@ -1,27 +1,27 @@
 function rugbyShopLogica(){
   let articulos = [
-      {nombre: "Botines Under Armour", categoria: "botines" , id: 1, precio: 5000, srcImg: "botines-under.PNG"},
-      {nombre: "Botines Gilbert", categoria: "botines" , id: 2, precio: 4800, srcImg: "botines-gilbert.PNG"},
-      {nombre: "Botines Canterbury- Red", categoria: "botines" , id: 3, precio: 6500, srcImg: "botines-canterbury2.PNG"},
-      {nombre: "Botines Canterbury- Blues", categoria: "botines" , id: 4 , precio: 6600, srcImg: "botines-canterbury.PNG"},
-      {nombre: "Botines Adidas- Blacks", categoria: "botines" , id: 5, precio: 6400, srcImg: "botines-adidas2.PNG"},
-      {nombre: "Botines Adidas- Kakari", categoria: "botines" , id: 6, precio: 6250, srcImg: "botines-adidas.PNG"},
-      {nombre: "Protector Bucal", categoria: "accesorios" , id: 7, precio: 800, srcImg: "bucal1.PNG"},
-      {nombre: "Protector Bucal", categoria: "accesorios" , id: 8, precio: 800, srcImg: "bucal2.PNG"},
-      {nombre: "Protector Bucal", categoria: "accesorios" , id: 9, precio: 800, srcImg: "bucal3.PNG"},
-      {nombre: "Protector Bucal", categoria: "accesorios" , id: 10 , precio: 800, srcImg: "bucal4.PNG"},    
-      {nombre: "Camiseta All Blacks", categoria: "indumentaria" , id: 11, precio: 4000, srcImg: "camiseta-all-blacks.PNG"},    
-      {nombre: "Camiseta Duendes", categoria: "indumentaria" , id: 12, precio: 3900, srcImg: "camiseta-duendes.PNG"},    
-      {nombre: "Camiseta Escocia", categoria: "indumentaria" , id: 13, precio: 4000, srcImg: "camiseta-escocia.PNG"},    
-      {nombre: "Camiseta Francia", categoria: "indumentaria" , id: 14 , precio: 4200, srcImg: "camiseta-francia.PNG"},    
-      {nombre: "Camiseta OLD Pumas", categoria: "indumentaria" , id: 15 , precio: 4500, srcImg: "camiseta-OLD-pumas.PNG"},    
-      {nombre: "Camiseta SIC", categoria: "indumentaria" , id: 16 , precio: 3900, srcImg: "camiseta-sic.PNG"},    
-      {nombre: "Camiseta Wales", categoria: "indumentaria" , id: 17, precio: 4000, srcImg: "camiseta-wales.PNG"},
-      {nombre: "Casco Canterbury", categoria: "accesorios" , id: 18 , precio: 2000, srcImg: "casco1.PNG"},            
-      {nombre: "Medias Entrenamiento", categoria: "indumentaria" , id: 19, precio: 2000, srcImg: "medias.PNG"},    
-      {nombre: "Pelota Gilbert", categoria: "pelotas" , id: 20 , precio: 5000, srcImg: "pelota.PNG"},    
-      {nombre: "Pelota 4 Naciones", categoria: "pelotas" , id: 21, precio: 4400, srcImg: "pelota2.PNG"},        
-      {nombre: "Pelota Escocia", categoria: "pelotas" , id: 22 , precio: 5000, srcImg: "pelota4.PNG"},    
+      {nombre: "Botines Under Armour", categoria: "botines" , id: 1, precio: 5000, srcImg: "botines-under"},
+      {nombre: "Botines Gilbert", categoria: "botines" , id: 2, precio: 4800, srcImg: "botines-gilbert"},
+      {nombre: "Botines Canterbury- Red", categoria: "botines" , id: 3, precio: 6500, srcImg: "botines-canterbury2"},
+      {nombre: "Botines Canterbury- Blues", categoria: "botines" , id: 4 , precio: 6600, srcImg: "botines-canterbury"},
+      {nombre: "Botines Adidas- Blacks", categoria: "botines" , id: 5, precio: 6400, srcImg: "botines-adidas2"},
+      {nombre: "Botines Adidas- Kakari", categoria: "botines" , id: 6, precio: 6250, srcImg: "botines-adidas"},
+      {nombre: "Protector Bucal", categoria: "accesorios" , id: 7, precio: 800, srcImg: "bucal1"},
+      {nombre: "Protector Bucal", categoria: "accesorios" , id: 8, precio: 800, srcImg: "bucal2"},
+      {nombre: "Protector Bucal", categoria: "accesorios" , id: 9, precio: 800, srcImg: "bucal3"},
+      {nombre: "Protector Bucal", categoria: "accesorios" , id: 10 , precio: 800, srcImg: "bucal4"},    
+      {nombre: "Camiseta All Blacks", categoria: "indumentaria" , id: 11, precio: 4000, srcImg: "camiseta-all-blacks"},    
+      {nombre: "Camiseta Duendes", categoria: "indumentaria" , id: 12, precio: 3900, srcImg: "camiseta-duendes"},    
+      {nombre: "Camiseta Escocia", categoria: "indumentaria" , id: 13, precio: 4000, srcImg: "camiseta-escocia"},    
+      {nombre: "Camiseta Francia", categoria: "indumentaria" , id: 14 , precio: 4200, srcImg: "camiseta-francia"},    
+      {nombre: "Camiseta OLD Pumas", categoria: "indumentaria" , id: 15 , precio: 4500, srcImg: "camiseta-OLD-pumas"},    
+      {nombre: "Camiseta SIC", categoria: "indumentaria" , id: 16 , precio: 3900, srcImg: "camiseta-sic"},    
+      {nombre: "Camiseta Wales", categoria: "indumentaria" , id: 17, precio: 4000, srcImg: "camiseta-wales"},
+      {nombre: "Casco Canterbury", categoria: "accesorios" , id: 18 , precio: 2000, srcImg: "casco1"},            
+      {nombre: "Medias Entrenamiento", categoria: "indumentaria" , id: 19, precio: 2000, srcImg: "medias"},    
+      {nombre: "Pelota Gilbert", categoria: "pelotas" , id: 20 , precio: 5000, srcImg: "pelota"},    
+      {nombre: "Pelota 4 Naciones", categoria: "pelotas" , id: 21, precio: 4400, srcImg: "pelota2"},        
+      {nombre: "Pelota Escocia", categoria: "pelotas" , id: 22 , precio: 5000, srcImg: "pelota4"},    
   ]
 
   // ASIGNANDO CONTENEDOR PARA CARDS
@@ -116,7 +116,7 @@ function creadorCard(array, contenedor, contenidoCarrito) {
       x.innerHTML = `
           <div class="bg">
               <h3 class="titleCard">${nombre}</h3>
-              <img class="imgCard" src="././img/${srcImg}">
+              <img class="imgCard" src="./img/${srcImg}">
               <div class="c2">
                   <h3 class="precioCard">$-${precio}</h3>
                   <button id=${id}>Agregar al carrito</button>
